@@ -4,11 +4,11 @@
     this.each(function () {
       var form = $(this);
       for (var i = $.fn.exform.renders.length - 1; i >= 0; i--) {
-        $.fn.exform.renders[i](form)
+        $.fn.exform.renders[i](form);
       };
       form.addClass('rended');
-    })
-  }
+    });
+  };
   $.fn.exform.renders = [];
   $(function() {
     $('.exform:not(.rended)').exform();
@@ -28,7 +28,7 @@
           }
       }
       return cookieValue;
-  }
+  };
 
   //dropdown submenu plugin
   $(document)
@@ -88,7 +88,7 @@
   // g-search
   $('#g-search .dropdown-menu a').click(function(){
       $('#g-search').attr('action', $(this).data('action')).submit();
-  })
+  });
 
   // save settings
   $.save_user_settings = function(key, value, success, error){
@@ -103,6 +103,6 @@
           xhr.setRequestHeader("X-CSRFToken", csrftoken);
       }
     });
-  }
+  };
   
-})(jQuery)
+})(jQuery);

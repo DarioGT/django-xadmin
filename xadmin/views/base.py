@@ -427,7 +427,7 @@ class CommAdminView(BaseAdminView):
         context.update({
             'menu_template': self.menu_template,
             'nav_menu': nav_menu,
-            'site_title': self.site_title or _(u'Django Xadmin'),
+            'site_title': self.site_title or _(u'SoftMachine'),
             'breadcrumbs': self.get_breadcrumb()
         })
 

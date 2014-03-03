@@ -21,6 +21,7 @@ checkbox = forms.CheckboxInput({'class': 'action-select'}, lambda value: False)
 
 def action_checkbox(obj):
     return checkbox.render(ACTION_CHECKBOX_NAME, force_unicode(obj.pk))
+
 action_checkbox.short_description = mark_safe(
     '<input type="checkbox" id="action-toggle" />')
 action_checkbox.allow_tags = True
